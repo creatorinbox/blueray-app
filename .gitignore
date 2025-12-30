@@ -1,0 +1,61 @@
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Dependencies
+/vendor/
+/node_modules/
+
+# IDE / Editor
+.vscode/
+.idea/
+.fleet/
+.zed/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs & cache
+*.log
+.phpunit.result.cache
+.phpunit.cache
+.cache/
+
+# Laravel storage
+/storage/*.key
+/storage/logs/*
+/storage/framework/cache/*
+/storage/framework/sessions/*
+/storage/framework/views/*
+/storage/debugbar
+
+# Public generated files
+/public/hot
+/public/storage
+/public/build
+/public/mix-manifest.json
+/public/js/*.map
+/public/css/*.map
+
+# Auth / secrets
+auth.json
+
+# Homestead / Vagrant
+Homestead.yaml
+Homestead.json
+.vagrant/
+
+# Coverage & build tools
+/coverage/
+.sass-cache/
+.pnp/
+.pnp.js
+
+# Node logs
+npm-debug.log*
+yarn-error.log*
+
+# Big / unwanted files
+.styleci.zip

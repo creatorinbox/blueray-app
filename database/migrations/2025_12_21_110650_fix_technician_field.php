@@ -1,0 +1,29 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+return new class extends Migration
+{
+    /**
+     * Run the migrations.
+     */
+    public function up(): void
+    {
+        Schema::table('job_cards', function (Blueprint $table) {
+            // Make technician field nullable since we're using service_attend instead
+            $table->string('technician')->nullable()->change();
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     */
+    public function down(): void
+    {
+        Schema::table('job_cards', function (Blueprint $table) {
+            $table->string('technician')->nullable(false)->change();
+        });
+    }
+};
